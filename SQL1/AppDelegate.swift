@@ -11,11 +11,37 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var dbPath = ""
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        let docPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        print(docPath)
+        
+        // MARK: - copy and attach file with xcode project
+        
+        self.dbPath = docPath + "/URVI.db"
+        
+        
+        if(!FileManager.default.fileExists(atPath: self.dbPath))
+        {
+            let bundleDBPath = Bundle.main.path(forResource: "URVI", ofType: "db")
+            
+            do{
+                try FileManager.default.copyItem(atPath: bundleDBPath!, toPath: self.dbPath)
+            }
+            catch(let err as NSError)
+            {
+                print(err.localizedDescription)
+            }
+            
+        }
+        
         // Override point for customization after application launch.
         return true
     }

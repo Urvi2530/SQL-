@@ -15,6 +15,10 @@
 		C99573AA23B5F3F1003817AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99573A823B5F3F1003817AA /* LaunchScreen.storyboard */; };
 		C99573B523B5F3F1003817AA /* SQL1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99573B423B5F3F1003817AA /* SQL1Tests.swift */; };
 		C99573C023B5F3F1003817AA /* SQL1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99573BF23B5F3F1003817AA /* SQL1UITests.swift */; };
+		C99573CE23B5F475003817AA /* URVI.db in Resources */ = {isa = PBXBuildFile; fileRef = C99573CD23B5F475003817AA /* URVI.db */; };
+		C99573D123B5F4C5003817AA /* uuu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99573D023B5F4C5003817AA /* uuu.swift */; };
+		C99573DB23B5FDC1003817AA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C99573DA23B5FDC1003817AA /* libsqlite3.0.tbd */; };
+		C99573E123B60296003817AA /* nnn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99573E023B60296003817AA /* nnn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		C99573BB23B5F3F1003817AA /* SQL1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQL1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99573BF23B5F3F1003817AA /* SQL1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQL1UITests.swift; sourceTree = "<group>"; };
 		C99573C123B5F3F1003817AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99573CD23B5F475003817AA /* URVI.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = URVI.db; sourceTree = "<group>"; };
+		C99573D023B5F4C5003817AA /* uuu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uuu.swift; sourceTree = "<group>"; };
+		C99573DA23B5FDC1003817AA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C99573DC23B5FDE2003817AA /* SQL1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQL1-Bridging-Header.h"; sourceTree = "<group>"; };
+		C99573E023B60296003817AA /* nnn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nnn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99573DB23B5FDC1003817AA /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				C99573B323B5F3F1003817AA /* SQL1Tests */,
 				C99573BE23B5F3F1003817AA /* SQL1UITests */,
 				C995739A23B5F3F1003817AA /* Products */,
+				C99573D923B5FDC1003817AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +110,8 @@
 		C995739B23B5F3F1003817AA /* SQL1 */ = {
 			isa = PBXGroup;
 			children = (
+				C99573CF23B5F4A3003817AA /* dbb */,
+				C99573CD23B5F475003817AA /* URVI.db */,
 				C995739C23B5F3F1003817AA /* AppDelegate.swift */,
 				C995739E23B5F3F1003817AA /* ViewController.swift */,
 				C99573A023B5F3F1003817AA /* Main.storyboard */,
@@ -106,6 +119,7 @@
 				C99573A823B5F3F1003817AA /* LaunchScreen.storyboard */,
 				C99573AB23B5F3F1003817AA /* Info.plist */,
 				C99573A323B5F3F1003817AA /* SQL1.xcdatamodeld */,
+				C99573E023B60296003817AA /* nnn.swift */,
 			);
 			path = SQL1;
 			sourceTree = "<group>";
@@ -126,6 +140,23 @@
 				C99573C123B5F3F1003817AA /* Info.plist */,
 			);
 			path = SQL1UITests;
+			sourceTree = "<group>";
+		};
+		C99573CF23B5F4A3003817AA /* dbb */ = {
+			isa = PBXGroup;
+			children = (
+				C99573D023B5F4C5003817AA /* uuu.swift */,
+				C99573DC23B5FDE2003817AA /* SQL1-Bridging-Header.h */,
+			);
+			path = dbb;
+			sourceTree = "<group>";
+		};
+		C99573D923B5FDC1003817AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99573DA23B5FDC1003817AA /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +227,7 @@
 				TargetAttributes = {
 					C995739823B5F3F1003817AA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C99573AF23B5F3F1003817AA = {
@@ -236,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99573AA23B5F3F1003817AA /* LaunchScreen.storyboard in Resources */,
+				C99573CE23B5F475003817AA /* URVI.db in Resources */,
 				C99573A723B5F3F1003817AA /* Assets.xcassets in Resources */,
 				C99573A223B5F3F1003817AA /* Main.storyboard in Resources */,
 			);
@@ -265,6 +298,8 @@
 				C995739F23B5F3F1003817AA /* ViewController.swift in Sources */,
 				C995739D23B5F3F1003817AA /* AppDelegate.swift in Sources */,
 				C99573A523B5F3F1003817AA /* SQL1.xcdatamodeld in Sources */,
+				C99573D123B5F4C5003817AA /* uuu.swift in Sources */,
+				C99573E123B60296003817AA /* nnn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +465,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SQL1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bgv.SQL1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQL1/dbb/SQL1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,11 +482,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SQL1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bgv.SQL1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQL1/dbb/SQL1-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
